@@ -1,0 +1,26 @@
+CREATE TABLE keywords (id BIGINT, domain_id BIGINT, keyword VARCHAR(255));
+
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838714, 682, 'shoes');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838716, 682, 'hats');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838717, 682, 'sneakers');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838718, 682, 'cutlery');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838719, 682, 'precious gems');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838720, 682, 'foreign currency exchange');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838721, 682, 'flat-screen TVs');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838722, 682, 'sharp objects');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838723, 682, 'dog food');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838724, 682, 'batman action figures');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838725, 682, 'spider-man action figures');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838726, 682, 'spaghetti');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838727, 682, 'linguine');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838728, 682, 'discount vodka');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838730, 682, 'tires');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838731, 682, 'foreclosed homes');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838733, 682, 'justin bieber');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838734, 682, 'justin timberlake');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838735, 682, 'steve buscemi');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838736, 682, 'toyota');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838737, 682, 'semiconductors');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838738, 682, 'superconductors');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838740, 682, 'insulation');
+INSERT INTO KEYWORDS (id, domain_id, keyword) VALUES (838741, 682, 'common lisp');
