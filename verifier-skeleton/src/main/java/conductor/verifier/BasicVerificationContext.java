@@ -52,7 +52,7 @@ public class BasicVerificationContext implements VerificationContext {
     @Override
     public String toString() {
         if (verified()) {
-            return "VERIFICATION SUCCEEDED!";
+            return "VERIFICATION DONE!";
         } else {
             return "VERIFICATION FAILED: " + missingRows.size() + " missing rows; "
                     + corruptRows.size() + " corrupt rows.";
