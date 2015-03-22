@@ -18,7 +18,8 @@ public class Application {
 
         /* Grab a handle to the no-op printing verifier. Change this to "productionVerifier" once your implementation
          is working... */
-        final Verifier verifier = (Verifier) context.getBean("printingVerifier");
+     //	final Verifier verifier = (Verifier) context.getBean("printingVerifier");
+        final Verifier verifier = (Verifier) context.getBean("productionVerifier");
 
         /* Create a VerificationContext to capture the output of verification. */
         final BasicVerificationContext verificationContext = new BasicVerificationContext();
