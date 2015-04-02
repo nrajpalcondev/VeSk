@@ -46,7 +46,7 @@ public class ProductionVerifier extends AbstractVerifier {
                 /* compare by id of each sql response */
                 return Integer.parseInt(s1.split(",")[0]) - Integer.parseInt(s2.split(",")[0]);
             }
-        };
+        }
 
         matches = new TreeMap<String, String>(new string_num_compare()); /* initialization of the TreeMap to sort data */
         mutex = new Mutex(); /*initialization of the mutex */
@@ -71,7 +71,7 @@ public class ProductionVerifier extends AbstractVerifier {
 
     /**
      * Function used to retrieve s3 data
-     * @param s3Reader
+     * @param s3Reader: s3 retrieval object
      * @return String: data from the s3 'server'
      * @throws IOException
      */
@@ -92,7 +92,7 @@ public class ProductionVerifier extends AbstractVerifier {
 
     /**
      * Function used to retrieve sql data
-     * @param resultSet
+     * @param resultSet: sql retrieval object
      * @return String: sql data from the 'server'
      * @throws SQLException
      */
@@ -113,8 +113,8 @@ public class ProductionVerifier extends AbstractVerifier {
 
     /**
      * Function used to compare sql and s3 strings
-     * @param s3
-     * @param sql
+     * @param s3: s3 data from the 'server'
+     * @param sql: sql data from the 'server'
      * @return boolean: if they relate to the same query
      */
     private boolean compare(final String s3, final String sql) {
@@ -142,7 +142,7 @@ public class ProductionVerifier extends AbstractVerifier {
 
     /**
      * Function to detect non standard links
-     * @param s3
+     * @param s3: s3 data from the 'server'
      * @return boolean: if link is standard
      */
     private boolean standard_link(final String s3) {
@@ -162,7 +162,7 @@ public class ProductionVerifier extends AbstractVerifier {
 
     /**
      * Function to detect a null rank from google
-     * @param sql
+     * @param sql: sql data from the 'server'
      * @return boolean: if rank is null
      */
     private boolean null_rank(final String sql) {
@@ -182,7 +182,7 @@ public class ProductionVerifier extends AbstractVerifier {
 
     /**
      * Function used to add s3 data to it's desirable queue
-     * @param data
+     * @param data: s3 data from the 'server'
      */
     private void add_s3(final String data) {
 
@@ -216,7 +216,7 @@ public class ProductionVerifier extends AbstractVerifier {
 
     /**
      * Function used to add sql data to it's desirable queue
-     * @param data
+     * @param data: sql data from 'server'
      */
     private void add_sql(final String data) {
 
@@ -248,7 +248,6 @@ public class ProductionVerifier extends AbstractVerifier {
         }
     }
 
-    @Override
     public void verify(final VerificationContext context) {
         /* Get the clients for S3 and the database. */
 

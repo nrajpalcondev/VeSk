@@ -41,7 +41,6 @@ public class AmazonS3ClientFactory {
         final AmazonS3Client amazonS3Client = mock(AmazonS3Client.class);
 
         when(amazonS3Client.getObject(any(GetObjectRequest.class))).thenAnswer(new Answer<S3Object>() {
-            @Override
             public S3Object answer(InvocationOnMock invocationOnMock) throws Throwable {
                 final GetObjectRequest request = (GetObjectRequest) invocationOnMock.getArguments()[0];
 
@@ -55,7 +54,6 @@ public class AmazonS3ClientFactory {
         });
         when(amazonS3Client.getObject("searchlight-reports", "serp_items_report")).thenAnswer(new Answer<S3Object>() {
 
-            @Override
             public S3Object answer(InvocationOnMock invocationOnMock) throws Throwable {
                 return createObject();
             }
