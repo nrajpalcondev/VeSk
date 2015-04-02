@@ -39,7 +39,6 @@ public class PrintingVerifier extends AbstractVerifier {
                 + "," + resultSet.getInt("bing_search_rank");
     }
 
-    @Override
     public void verify(final VerificationContext context) {
         /* Get the clients for S3 and the database. */
 
@@ -59,7 +58,6 @@ public class PrintingVerifier extends AbstractVerifier {
 
         jdbcTemplate.query("SELECT * FROM keyword_url_facts", new ResultSetExtractor() {
 
-            @Override
             public Void extractData(final ResultSet resultSet) throws SQLException {
                 try {
                     while (true) {

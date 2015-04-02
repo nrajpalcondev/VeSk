@@ -39,12 +39,10 @@ public class BasicVerificationContext implements VerificationContext {
         return corruptRows;
     }
 
-    @Override
     public void missingRow(final String sqlRow) {
         missingRows.add(sqlRow);
     }
 
-    @Override
     public void corruptRow(final String row) {
         corruptRows.add(row);
     }
